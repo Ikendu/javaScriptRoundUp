@@ -1,0 +1,13 @@
+.btn {
+    color: white;
+    background: rgb(42, 42, 245);
+    margin: 10px;
+    padding: 2px;    
+    margin-left: 48%;
+}
+.txt {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}

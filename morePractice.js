@@ -45,18 +45,3 @@ console.log(ndu, vic, faith)
 let myname = "Chibundu"
 console.log(Array.from(myname))
 
-//callback function
-const toUpper = (value) => {
-    return value.toUpperCase()
-}
-const rev = (value) => {
-    return value.split("").reverse().join("").toUpperCase()
-}
-const converter = (value) => {
-    return Array.from()
-}
-const handleName = (item, cb) => {
-    let fullName = `Aniede ${item}`
-    return cb(fullName)
-} 
-console.log(handleName("Chibundu", rev))
