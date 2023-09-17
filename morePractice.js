@@ -41,5 +41,22 @@ console.log(names)
 let [ndu, ,vic, ekene, faith, ike] = names
 console.log(ndu, vic, faith)
 
+//array.from
 let myname = "Chibundu"
 console.log(Array.from(myname))
+
+//callback function
+const toUpper = (value) => {
+    return value.toUpperCase()
+}
+const rev = (value) => {
+    return value.split("").reverse().join("").toUpperCase()
+}
+const converter = (value) => {
+    return Array.from()
+}
+const handleName = (item, cb) => {
+    let fullName = `Aniede ${item}`
+    return cb(fullName)
+} 
+console.log(handleName("Chibundu", rev))
