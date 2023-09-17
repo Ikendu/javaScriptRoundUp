@@ -2,8 +2,14 @@
     color: white;
     background: rgb(42, 42, 245);
     margin: 10px;
-    padding: 2px;    
+    padding: 8px 20px;    
     margin-left: 48%;
+    font-size: 16px;
+    border-radius: 12px;
+}
+h2 {
+    font-size: xx-large;
+    margin-left: 50%;
 }
 .txt {
     text-align: center;

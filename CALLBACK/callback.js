@@ -16,22 +16,27 @@ console.log(handleName("Chibundu", rev))
 
 //using setTimeout
 let btn = document.querySelector(".btn")
-let first = document.querySelector(".first")
-let second = document.querySelector(".second")
-let third = document.querySelector(".third")
-let fouth = document.querySelector(".fouth")
+let mbu = document.querySelector(".mbu")
+let abuo = document.querySelector(".abuo")
+let atu = document.querySelector(".atu")
+let anu = document.querySelector(".anu") 
 
 btn.addEventListener("click", () => {
     setTimeout(() => {
-        first.style.color = "red"
-    }, 2000);
-    setTimeout(() => {
-        second.style.color = "green"
-    }, 4000);
-    setTimeout(() => {
-        third.style.color = "blue"
-    }, 6000);
-    setTimeout(() => {
-        fouth.style.color = "pink"
-    }, 8000);
+        mbu.style.color = "red";
+        setTimeout(() => {
+            abuo.style.color = "blue"
+            setTimeout(() => {
+                atu.style.color = "green"
+                setTimeout(() => {
+                    anu.style.color = "brown"
+                }, 2000)
+            }, 2000)
+        }, 2000)
+    }, 2000)
+    // setTimeout(() => {mbu.style.color = "red"}, 2000)
+    // setTimeout(() => {abuo.style.color = "blue"}, 4000)
+    // setTimeout(() => {atu.style.color = "green"}, 6000)
+    // setTimeout(() => {anu.style.color = "orange"}, 8000)
 })
+
