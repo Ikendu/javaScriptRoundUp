@@ -28,19 +28,43 @@ let articles = [
     {userId: 3, article: ["asaa", "atato", "nine", "ten"]},
     {userId: 4, article: ["mbu", "abu", "atu"]}
 ]
+
 const getUser = (name) => {
-    let getter = users.find(user => user.name == name)
+    let user = users.find(item => item.name === name)
     return new Promise((resolve, reject) => {
-        if (getter) return resolve(getter)
-        else reject(`No user named ${getter.name}`)
+        if (user) return resolve(user)
+        else reject(`The name ${name} is invalid`)
     })
 }
 const getArticle = (id) => {
-    let getter = articles.find(item => item.userId === id )
-    return new Promise ((resolve, reject) => {
-        if (getter) return resolve(getter.article)
-        else reject("the id is invalid")
+    let data = articles.find(item => item.userId === id)
+    return new Promise((resolve, reject) => {
+        if (data) return resolve(data.article)
+        else reject(`Wrong Id`)
     })
-}
+} 
 
-getUser("chibundu").then((item => console.log(item))).catch()
+const getData = async (name) => {    
+    try {
+        let user = await getUser(name)
+        let data = await getArticle(user.id)
+        console.log(data) 
+    } catch (err) {
+        console.log(err)
+    }
+}
+getData("chibundu")
+getData("onyinye")
+getData("akuoma")
+//using chainging of .then() make it individually
+
+getUser("chibundu")
+.then(user => getArticle(user.id))
+.then(item => console.log(item[2]))
+
+getUser("onyinye")
+.then(user => getArticle(user.id))
+.then(item => console.log(item))
+
+
+console.log(getArticle(4))
