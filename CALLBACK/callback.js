@@ -27,7 +27,7 @@ btn.addEventListener("click", () => {
         setTimeout(() => {
             abuo.style.color = "blue"
             setTimeout(() => {
-                atu.stlye.color = "brown"
+                atu.style.color = "brown"
                 setTimeout(() => {
                     anu.style.color = "green"
                 }, 2000)
@@ -35,9 +35,10 @@ btn.addEventListener("click", () => {
         }, 2000)
     }, 1000)
 })
-    // setTimeout(() => {mbu.style.color = "red"}, 2000)
-    // setTimeout(() => {abuo.style.color = "blue"}, 4000)
-    // setTimeout(() => {atu.style.color = "green"}, 6000)
-    // setTimeout(() => {anu.style.color = "orange"}, 8000)
-})
+// btn.addEventListener("click", () => {
+//     setTimeout(() => {mbu.style.color = "red"}, 1000)
+//     setTimeout(() => {abuo.style.color = "blue"}, 3000)
+//     setTimeout(() => {atu.style.color = "green"}, 5000)
+//     setTimeout(() => {anu.style.color = "green"}, 7000)
+// })    
 
