@@ -6,7 +6,7 @@ const rev = (value) => {
     return value.split("").reverse().join("").toUpperCase()
 }
 const converter = (value) => {
-    return Array.from()
+    return Array.from(value)
 }
 const handleName = (item, cb) => {
     let fullName = `Aniede ${item}`
@@ -23,17 +23,18 @@ let anu = document.querySelector(".anu")
 
 btn.addEventListener("click", () => {
     setTimeout(() => {
-        mbu.style.color = "red";
+        mbu.style.color = "red"
         setTimeout(() => {
             abuo.style.color = "blue"
             setTimeout(() => {
-                atu.style.color = "green"
+                atu.stlye.color = "brown"
                 setTimeout(() => {
-                    anu.style.color = "brown"
+                    anu.style.color = "green"
                 }, 2000)
             }, 2000)
         }, 2000)
-    }, 2000)
+    }, 1000)
+})
     // setTimeout(() => {mbu.style.color = "red"}, 2000)
     // setTimeout(() => {abuo.style.color = "blue"}, 4000)
     // setTimeout(() => {atu.style.color = "green"}, 6000)
