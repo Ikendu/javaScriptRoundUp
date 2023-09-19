@@ -1,4 +1,4 @@
-const url = "https://www.course-api.com/react-tours-projects"
+const url = "https://www.course-api.com/react-tours-project"
 //console.log(fetch(url))
 
 
@@ -21,4 +21,8 @@ const myData = async() => {
     }
 }
 myData()
+
+//getting height and width of the window
+console.log( "heigth", window.innerHeight)
+console.log( "width", window.innerWidth)
 
