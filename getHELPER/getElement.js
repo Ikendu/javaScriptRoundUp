@@ -23,8 +23,8 @@ const getter = (selector, isList) => {
 
 //spread and ternary operator
 const getDoc = (selector, isList) => {
-    isList? ele = [...document.querySelectorAll(selector)]
-    : ele = document.querySelector(selector)
+    ele = isList? [...document.querySelectorAll(selector)]
+    : document.querySelector(selector)
 
     if(ele && !isList || isList && ele.length > 0) return ele
     return "Please recheck the selector"
