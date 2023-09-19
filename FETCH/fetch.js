@@ -1,4 +1,4 @@
-const url = "https://www.course-api.com/react-tours-project"
+const url = "https://www.course-api.com/react-tours-projects"
 //console.log(fetch(url))
 
 
@@ -9,6 +9,12 @@ const url = "https://www.course-api.com/react-tours-project"
 const myData = async() => {
     try {
         let res = await fetch(url)
+        //optional for handling error
+        if(!res.ok) {
+            let msg = `There was an error "${res.status} ${res.statusText}"`
+            console.warn(msg)
+            //throw new Error(msg)
+        }
         console.log(await res.json())
     } catch (error) {
         console.log(error)        
