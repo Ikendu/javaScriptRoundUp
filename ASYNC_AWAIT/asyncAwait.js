@@ -56,15 +56,15 @@ const getData = async (name) => {
 getData("chibundu")
 getData("onyinye")
 getData("akuoma")
+
 //using chainging of .then() make it individually
 
 getUser("chibundu")
 .then(user => getArticle(user.id))
 .then(item => console.log(item[2]))
+.catch(err => console.log(err))
 
 getUser("onyinye")
 .then(user => getArticle(user.id))
 .then(item => console.log(item))
-
-
-console.log(getArticle(4))
+.catch(error = console.log(error))
