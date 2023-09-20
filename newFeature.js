@@ -28,9 +28,9 @@ entries
 let list = entries.map(([first, second])  => [ second] ).flat()
 console.log(list)
 
-//includes
-let name = "Samson"
-let checker = name.includes("S", 0)
+//string includes
+let nameA = "Samson"
+let checker = nameA.includes("S", 0)
 console.log(checker)
 
 let classList = [
@@ -42,3 +42,10 @@ let classList = [
 ]
 let filtered = classList.filter(item => item.name.toLowerCase().includes("a"))
 console.log(filtered)
+
+//Array includes
+let arr = ["hello", "Green", "light", "love", "gift"]
+let check = arr[0].includes("lo", 2)
+let arrCheck = arr.includes("light")
+console.log(check)
+console.log(arrCheck)
