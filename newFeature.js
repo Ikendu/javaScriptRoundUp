@@ -27,3 +27,18 @@ entries
 
 let list = entries.map(([first, second])  => [ second] ).flat()
 console.log(list)
+
+//includes
+let name = "Samson"
+let checker = name.includes("S", 0)
+console.log(checker)
+
+let classList = [
+    {name : "Samuel"},
+    {name: "Younglife"},
+    {name: "Ella"},
+    {name: "Aku"},
+    {name: "Ndu"},
+]
+let filtered = classList.filter(item => item.name.toLowerCase().includes("a"))
+console.log(filtered)
